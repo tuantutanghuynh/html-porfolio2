@@ -1,0 +1,113 @@
+body{
+    font-family:'Segoe UI', sans-serif;
+    background-color: #f4f7fa;
+    margin:0;
+    padding:0;
+    color: #333;
+
+}
+nav{
+    background-color: #222;
+    color:white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+
+nav h1{
+    font-size: 28px;
+    color: #00d8ff;
+    animation: wave 1.5s infinite ease-in-out;
+    letter-spacing: 2px;
+
+}
+
+@keyframes wave{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration:none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: #00d8ff;
+
+}
+
+section{
+    padding: 20px;
+    margin: 15px;
+    background-color: #ffffff;
+    border-left: 6px solid #00bcd4;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+img{
+    display:block;
+    margin 15px auto;
+    border-radius: 100%;
+    width:200px;
+    
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td{
+    padding:20px;
+    border:1px solid #ccc;
+    text-align: left;
+}
+
+table td a{
+    color:#00bcd4;
+    text-decoration:none
+}
+
+table td a:hover{
+    text-decoration: underline;
+}
+
+input, select,button{
+    margin-top: 10px;
+    padding: 10px;
+    width:100%;
+    border-radius:6px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: #00bcd4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #0097a7;
+}
